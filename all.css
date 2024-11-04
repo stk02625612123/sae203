@@ -1,0 +1,172 @@
+/* Styles pour la navigation */
+nav {
+  font-family: sans-serif;
+  background-color: #7B0105;
+  padding: 15px 0;
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  z-index: 1000; 
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item.active {
+  background-color: #FADD9C;
+}
+
+.nav-item:hover {
+  background-color: #D2B48B;
+}
+
+form fieldset {
+  border: 2px solid #FADD9C;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Style pour la légende */
+form legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #FADD9C;
+  padding: 0 10px;
+}
+
+form {
+  max-width: 60%;
+  width: 60%;
+  background-color: rgba(138, 0, 2, 0.729);
+  padding: 15px 25px;
+  margin: 20px auto;
+  color: #fffaf1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+/* Style pour les labels */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fffaf1;
+}
+
+/* Ligne pour Nom, Prénom et Âge */
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form-row > div {
+  flex: 1; 
+}
+
+/* Champs de saisie de texte et de sélection */
+form input[type="text"],
+form input[type="number"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: #fffaf1;
+  color: #1F1F1F;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+form input[type="radio"] {
+  margin-right: 4px;
+}
+
+/* Style pour le textarea avec moins de hauteur par défaut */
+form textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+/* Style du bouton de validation */
+form input[type="submit"] {
+  background-color: rgba(138, 0, 2, 0.729);
+  color: #FADD9C;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+
+form input[type="submit"]:hover {
+  background-color: rgba(138, 0, 2, 0.9);
+}
+
+/* Style du footer */
+footer {
+  background-color: #FADD9C;
+  padding: 20px;
+  color: #7B0105;
+  font-family: sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Liens sociaux alignés à gauche */
+.social-links {
+  display: flex;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Copyright centré */
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  flex-grow: 1; /* Prend l’espace disponible pour centrer */
+}

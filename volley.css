@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #8A8C65; /* Couleur de fond */
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed; /* Fixe l'image de fond */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../img/volley.jpg'); /* Image de fond */
+  background-size: contain; 
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.section {
+width: 30%;
+float: left;
+padding: 20px;
+text-align: left;
+background-color: #7B0105;
+margin: 2px;
+transition: transform 0.3s ease, color 0.1s ease;
+}
+.section:hover {
+  transform: scale(1.05); 
+  color: white;            
+}
+
+
+h1 {
+text-align: center;
+transform: rotate(-10deg);
+color: white;
+}
+
+h2 {
+color: #ffe4aa;
+}
+
+p {
+text-indent: 2em;
+}
+
+img {
+width: 45%;
+display: block;
+margin: 0 auto;
+width: 40vw;
+transition: width 2s;
+transition-timing-function:ease-in;
+transition-delay: 1s;
+transition: width 2s, transform 2s;
+}
+img:hover {
+width: 30vw;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}

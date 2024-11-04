@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right, #fefdfd, #FADD9C); /* Dégradé de fond */
+  padding-bottom: 30px; 
+  box-sizing: border-box; 
+}
+.box {
+  margin: 50px; 
+  padding: 5px;
+  text-align: center;
+}
+
+/* Style des images */
+img {
+  width: 280px;
+  height: 400px; 
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  padding: 10px; 
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  margin: 0 auto;
+  position: relative;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; 
+}
